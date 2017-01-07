@@ -1,4 +1,4 @@
-# Next & Apollo Integration
+# Next & Apollo Example
 ## Demo
 https://next-apollo-example-oxuygbsyft.now.sh/
 
