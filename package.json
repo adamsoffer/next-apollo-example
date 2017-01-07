@@ -4,7 +4,9 @@
   "description": "Next + Apollo integration",
   "main": "index.js",
   "scripts": {
-    "dev": "next"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "author": "Adam Soffer",
   "license": "ISC",
