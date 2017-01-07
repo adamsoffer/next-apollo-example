@@ -1,0 +1,38 @@
+{
+  "name": "next-apollo-example",
+  "version": "1.0.0",
+  "description": "Next + Apollo integration",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next"
+  },
+  "author": "Adam Soffer",
+  "license": "ISC",
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "**/node_modules/**"
+    ]
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-transform-remove-strict-mode": "0.0.2",
+    "babel-preset-env": "^1.1.6",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-config-standard-jsx": "^3.2.0",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-react": "^6.8.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "standard": "^8.6.0"
+  },
+  "dependencies": {
+    "apollo-client": "^0.6.0",
+    "graphql": "^0.8.2",
+    "graphql-tag": "^1.2.1",
+    "next": "^2.0.0-beta.16",
+    "react-apollo": "^0.8.1",
+    "react-redux": "^5.0.1",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.1.0"
+  }
+}
