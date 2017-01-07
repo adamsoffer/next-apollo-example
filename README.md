@@ -1,5 +1,4 @@
-# Next Apollo Integration
-Next.js & Apollo integration
+# Next & Apollo Integration
 
 ## How to use
 
