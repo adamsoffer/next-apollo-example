@@ -14,5 +14,6 @@ Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.
 
 ```bash
 now
+```
 
 ## The idea behind the example
