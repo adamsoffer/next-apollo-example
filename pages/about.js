@@ -1,14 +1,14 @@
 import Link from 'next/link'
-import PostList from '../components/PostList'
 import withData from '../lib/withData'
 
-function App () {
+function About () {
   return (
     <div>
       <Link href="/">Home</Link>
       <Link href="/about">About</Link>
-      <PostList />
+      <h1>About Page</h1>
     </div>
   )
 }
-export default withData(App)
+
+export default withData(About)
