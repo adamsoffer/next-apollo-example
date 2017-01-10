@@ -11,4 +11,4 @@ function About () {
   )
 }
 
-export default withData(About)
+export default About
