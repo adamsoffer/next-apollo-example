@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import withData from '../lib/withData'
 
 function About () {
   return (
