@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import withData from '../lib/withData'
 
 function About () {
   return (
@@ -11,4 +10,4 @@ function About () {
   )
 }
 
-export default withData(About)
+export default About
