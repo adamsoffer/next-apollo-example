@@ -1,6 +1,6 @@
 # Next & Apollo Example
 ## Demo
-https://next-apollo-example-mescagncxz.now.sh
+https://next-apollo-example-cwybaktyzv.now.sh
 
 ## How to use
 Install it and run:
