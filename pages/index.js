@@ -1,12 +1,12 @@
-import Link from 'next/link'
 import PostList from '../components/PostList'
+import Header from '../components/Header'
 import withData from '../lib/withData'
 
 function App () {
   return (
     <div>
-      <Link href="/">Home</Link>
-      <Link href="/about">About</Link>
+      <Header />
+      <h1>Home Page</h1>
       <PostList />
     </div>
   )

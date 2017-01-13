@@ -1,10 +1,9 @@
-import Link from 'next/link'
+import Header from '../components/Header'
 
 function About () {
   return (
     <div>
-      <Link href="/">Home</Link>
-      <Link href="/about">About</Link>
+      <Header />
       <h1>About Page</h1>
     </div>
   )
