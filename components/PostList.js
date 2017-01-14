@@ -2,7 +2,7 @@ import gql from 'graphql-tag'
 import { graphql } from 'react-apollo'
 import PostUpvoter from './PostUpvoter'
 
-// The data prop, which is provided by the wrapper below contains,
+// The data prop, which is provided by the HOC below contains
 // a `loading` key while the query is in flight and posts when it is ready
 function PostList (props) {
   const { loading, posts } = props.data
