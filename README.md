@@ -3,7 +3,7 @@
 https://next-apollo-example-bgrgnkovwu.now.sh
 
 ## How to use
-Install it and rund
+Install it and run
 
 ```bash
 npm install
