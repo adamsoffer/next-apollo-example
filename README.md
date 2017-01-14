@@ -1,9 +1,9 @@
 # Next & Apollo Example
 ## Demo
-https://next-apollo-example-cwybaktyzv.now.sh
+https://next-apollo-example-gxrguyjhhw.now.sh
 
 ## How to use
-Install it and run:
+Install it and rund
 
 ```bash
 npm install
@@ -17,4 +17,4 @@ now
 ```
 
 ## The idea behind the example
-TODO: explain why this is awesome.
+Apollo is a GraphQL client that makes fetching the exact data you need for your component easy and allows you to put your queries exactly where you need them. This example integrate Apollo seamlessly with Next.js by way of a [higher-order component (HOC)](https://facebook.github.io/react/docs/higher-order-components.html).
