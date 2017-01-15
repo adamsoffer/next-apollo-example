@@ -55,8 +55,6 @@ const createPost = gql`
   }
 `
 
-// The `graphql` wrapper executes a GraphQL query and makes the results
-// available on the `data` prop of the wrapped component (PostList here)
 export default graphql(createPost, {
   props: ({ ownProps, mutate }) => ({
     createPost: (title, url) => mutate({
