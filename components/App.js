@@ -1,6 +1,9 @@
 export default (props) => (
   <main>
     {props.children}
+    <footer>
+      Made by <a href='http://twitter.com/adamSoffer'>@adamSoffer</a>
+    </footer>
     <style jsx global>{`
       * {
         font-family: Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
@@ -11,6 +14,16 @@ export default (props) => (
       }
       a {
         color: #22BAD9;
+      }
+      footer {
+        background-color: rgba(255, 255, 255, .95);
+        bottom: 0;
+        font-size: 12px;
+        left: 0;
+        padding: 15px 0;
+        position: fixed;
+        text-align: center;
+        width: 100%;
       }
       p {
         font-size: 14px;

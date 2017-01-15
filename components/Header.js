@@ -10,6 +10,10 @@ export default (props) => (
       <a className={props.pathname === '/about' && 'is-active'}>About</a>
     </Link>
 
+    <Link href='https://github.com/ads1018/next-apollo-example'>
+      <a>Github</a>
+    </Link>
+
     <style jsx>{`
       header {
         margin-bottom: 25px;
