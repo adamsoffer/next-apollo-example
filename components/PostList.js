@@ -5,7 +5,7 @@ import PostUpvoter from './PostUpvoter'
 const POSTS_PER_PAGE = 10
 
 // The data prop, which is provided by the HOC below contains
-// a `loading` key while the query is in flight and posts when it is ready
+// a `loading` key while the query is in flight
 function PostList (props) {
   const { data: { allPosts, loading, _allPostsMeta }, loadMorePosts } = props
   if (loading) {

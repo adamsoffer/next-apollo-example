@@ -2,24 +2,26 @@ import gql from 'graphql-tag'
 import { graphql } from 'react-apollo'
 
 function Submit (props) {
+  function handleSubmit (e) {
+    e.preventDefault()
+    let title = e.target.elements.title.value
+    let url = e.target.elements.url.value
+    if (title === '' || url === '') {
+      window.alert('Both fields are required.')
+      return false
+    }
+    // prepend http if missing from url
+    if (!url.match(/^[a-zA-Z]+:\/\//)) {
+      url = `http://${url}`
+    }
+    props.createPost(title, url)
+    // reset form
+    e.target.elements.title.value = ''
+    e.target.elements.url.value = ''
+  }
+
   return (
-    <form onSubmit={(e) => {
-      e.preventDefault()
-      let title = e.target.elements.title.value
-      let url = e.target.elements.url.value
-      if (title === '' || url === '') {
-        window.alert('Both fields are required.')
-        return false
-      }
-      // prepend http if missing from url
-      if (!url.match(/^[a-zA-Z]+:\/\//)) {
-        url = `http://${url}`
-      }
-      props.createPost(title, url)
-      // reset form
-      e.target.elements.title.value = ''
-      e.target.elements.url.value = ''
-    }}>
+    <form onSubmit={handleSubmit}>
       <h1>Submit</h1>
       <input placeholder='title' name='title' />
       <input placeholder='url' name='url' />
