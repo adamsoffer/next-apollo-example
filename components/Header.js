@@ -1,20 +1,27 @@
 import Link from 'next/prefetch'
 
-export default () => (
-  <div>
-    { /* Prefetch using the declarative API */ }
+export default (props) => (
+  <header>
     <Link href='/'>
-      <a>Home</a>
+      <a className={props.pathname === '/' && 'is-active'}>Home</a>
     </Link>
 
     <Link href='/about'>
-      <a>About</a>
+      <a className={props.pathname === '/about' && 'is-active'}>About</a>
     </Link>
 
     <style jsx>{`
+      header {
+        margin-bottom: 25px;
+      }
       a {
-        margin-right: 10px;
+        font-size: 14px;
+        margin-right: 15px;
+        text-decoration: none;
+      }
+      .is-active {
+        text-decoration: underline;
       }
     `}</style>
-  </div>
+  </header>
 )

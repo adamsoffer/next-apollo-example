@@ -6,7 +6,24 @@ import { graphql } from 'react-apollo'
 function PostUpvoter (props) {
   return (
     <button onClick={() => props.upvote(props.id, props.votes + 1)}>
-      Upvote
+      <span />{props.votes}
+      <style jsx>{`
+        button {
+          align-items: center;
+          background-color: transparent;
+          color: #000;
+          display: flex;
+          border: 1px solid #e4e4e4;
+        }
+        span {
+          border-color: transparent transparent #000000 transparent;
+          border-style: solid;
+          border-width: 0 4px 6px 4px;
+          height: 0;
+          margin-right: 5px;
+          width: 0;
+        }
+      `}</style>
     </button>
   )
 }
@@ -24,7 +41,7 @@ const upvotePost = gql`
 export default graphql(upvotePost, {
   props: ({ ownProps, mutate }) => ({
     upvote: (id, votes) => mutate({
-      variables: { id, votes: votes },
+      variables: { id, votes },
       optimisticResponse: {
         updatePost: {
           id: ownProps.id,
