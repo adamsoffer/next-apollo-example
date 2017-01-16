@@ -8,10 +8,8 @@ function PostUpvoter (props) {
       {props.votes}
       <style jsx>{`
         button {
-          align-items: center;
           background-color: transparent;
           color: #000;
-          display: flex;
           border: 1px solid #e4e4e4;
         }
         button:before {
