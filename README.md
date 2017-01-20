@@ -1,4 +1,4 @@
-# Next & Apollo Example [![Build Status][ci-img]][ci]
+# Next & Apollo Example [![Build Status](https://travis-ci.org/ads1018/next-apollo-example.svg?branch=master)](https://travis-ci.org/ads1018/next-apollo-example)
 ## Demo
 https://next-apollo-example.now.sh
 
