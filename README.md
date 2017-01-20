@@ -1,4 +1,4 @@
-# Next & Apollo Example
+# Next & Apollo Example [![Build Status][ci-img]][ci]
 ## Demo
 https://next-apollo-example.now.sh
 
