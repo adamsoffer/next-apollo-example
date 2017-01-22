@@ -1,6 +1,6 @@
-export default (props) => (
+export default ({ children }) => (
   <main>
-    {props.children}
+    {children}
     <footer>
       Made by <a href='http://twitter.com/adamSoffer'>@adamSoffer</a>
     </footer>
