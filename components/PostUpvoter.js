@@ -9,8 +9,8 @@ function PostUpvoter (props) {
       <style jsx>{`
         button {
           background-color: transparent;
-          color: #000;
           border: 1px solid #e4e4e4;
+          color: #000;
         }
         button:active {
           background-color: transparent;
@@ -46,7 +46,6 @@ export default graphql(upvotePost, {
       optimisticResponse: {
         updatePost: {
           id: ownProps.id,
-          // Note that we can access the props of the container at `ownProps`
           votes: ownProps.votes + 1
         }
       }
