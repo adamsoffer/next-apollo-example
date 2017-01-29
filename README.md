@@ -3,8 +3,6 @@
 https://next-apollo-example.now.sh
 
 ## How to use
-Download the example [or clone the repo](https://github.com/ads1018/next-apollo-example.git):
-
 Install it and run
 
 ```bash
