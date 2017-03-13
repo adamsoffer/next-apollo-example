@@ -18,8 +18,6 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
-    "babel-plugin-transform-remove-strict-mode": "0.0.2",
-    "babel-preset-env": "^1.1.6",
     "eslint-config-standard": "^6.2.1",
     "eslint-config-standard-jsx": "^3.2.0",
     "eslint-plugin-promise": "^3.4.0",
@@ -28,13 +26,13 @@
     "standard": "^8.6.0"
   },
   "dependencies": {
-    "apollo-client": "^0.7.0",
-    "graphql": "^0.8.2",
-    "graphql-tag": "^1.2.1",
+    "graphql": "^0.9.1",
     "next": "^2.0.0-beta",
-    "react-apollo": "^0.8.1",
-    "react-redux": "^5.0.1",
+    "react": "^15.4.2",
+    "react-apollo": "^1.0.0-rc.2",
     "redux": "^3.6.0",
-    "redux-thunk": "^2.1.0"
+    "styletron-client": "^2.5.1",
+    "styletron-react": "^2.5.3",
+    "styletron-server": "^2.5.1"
   }
 }

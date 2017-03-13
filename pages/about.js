@@ -1,8 +1,8 @@
-import App from '../components/App'
+import Main from '../lib/layout'
 import Header from '../components/Header'
 
 export default (props) => (
-  <App>
+  <Main>
     <Header pathname={props.url.pathname} />
     <article>
       <h1>The Idea Behind This Example</h1>
@@ -19,5 +19,5 @@ export default (props) => (
         This example relies on <a href='http://graph.cool'>graph.cool</a> for its GraphQL backend.
       </p>
     </article>
-  </App>
+  </Main>
 )

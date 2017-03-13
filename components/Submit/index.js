@@ -1,5 +1,5 @@
-import gql from 'graphql-tag'
-import { graphql } from 'react-apollo'
+import { gql, graphql } from 'react-apollo'
+import { Form, H1, Input } from './styles'
 
 function Submit ({ createPost }) {
   function handleSubmit (e) {
@@ -26,26 +26,12 @@ function Submit ({ createPost }) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h1>Submit</h1>
-      <input placeholder='title' name='title' />
-      <input placeholder='url' name='url' />
+    <Form onSubmit={handleSubmit}>
+      <H1>Submit</H1>
+      <Input placeholder='title' name='title' />
+      <Input placeholder='url' name='url' />
       <button type='submit'>Submit</button>
-      <style jsx>{`
-        form {
-          border-bottom: 1px solid #ececec;
-          padding-bottom: 20px;
-          margin-bottom: 20px;
-        }
-        h1 {
-          font-size: 20px;
-        }
-        input {
-          display: block;
-          margin-bottom: 10px;
-        }
-      `}</style>
-    </form>
+    </Form>
   )
 }
 
