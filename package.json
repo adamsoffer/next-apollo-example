@@ -30,7 +30,6 @@
     "next": "^2.0.0-beta",
     "react": "^15.4.2",
     "react-apollo": "^1.0.0-rc.2",
-    "redux": "^3.6.0",
     "styletron-client": "^2.5.1",
     "styletron-react": "^2.5.3",
     "styletron-server": "^2.5.1"

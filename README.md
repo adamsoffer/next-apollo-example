@@ -28,3 +28,9 @@ In this simple example, we integrate Apollo seamlessly with Next by wrapping our
 On initial page load, while on the server and inside `getInitialProps`, we invoke the Apollo method,  [`getDataFromTree`](http://dev.apollodata.com/react/server-side-rendering.html#getDataFromTree). This method returns a promise; at the point in which the promise resolves, our Apollo Client store is completely initialized.
 
 This example relies on [graph.cool](http://graph.cool) for its GraphQL backend and [Styletron](http://styletron.js.org) for it's CSS-in-JS solution.
+
+## Integrating with Redux with Apollo
+By default, Apollo Client creates its own internal Redux store to manage queries and their results. If you are already using Redux for the rest of your application, you can have the client [integrate with your existing store](http://dev.apollodata.com/react/redux.html) instead. To see how this is done checkout the [redux branch.](https://github.com/ads1018/next-apollo-example/tree/redux)
+
+## Styled Components
+If you prefer Styled Components over Styletron for your CSS-in-JS solution checkout the [styled-components](https://github.com/ads1018/next-apollo-example/tree/styled-components) branch.
