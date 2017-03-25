@@ -54,25 +54,20 @@ export default graphql(allPosts, {
   props: ({ data }) => ({
     data,
     loadMorePosts: () => {
-      loadMorePosts(data)
-    }
-  })
-})(PostList)
-
-// Pagination logic
-function loadMorePosts (data) {
-  return data.fetchMore({
-    variables: {
-      skip: data.allPosts.length
-    },
-    updateQuery: (previousResult, { fetchMoreResult }) => {
-      if (!fetchMoreResult.data) {
-        return previousResult
-      }
-      return Object.assign({}, previousResult, {
-        // Append the new posts results to the old one
-        allPosts: [...previousResult.allPosts, ...fetchMoreResult.data.allPosts]
+      return data.fetchMore({
+        variables: {
+          skip: data.allPosts.length
+        },
+        updateQuery: (previousResult, { fetchMoreResult }) => {
+          if (!fetchMoreResult) {
+            return previousResult
+          }
+          return Object.assign({}, previousResult, {
+            // Append the new posts results to the old one
+            allPosts: [...previousResult.allPosts, ...fetchMoreResult.allPosts]
+          })
+        }
       })
     }
   })
-}
+})(PostList)
