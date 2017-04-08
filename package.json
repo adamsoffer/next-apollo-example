@@ -27,7 +27,8 @@
   },
   "dependencies": {
     "graphql": "^0.9.1",
-    "next": "^2.0.0-beta",
+    "next": "^2.1.0",
+    "prop-types": "^15.5.4",
     "react": "^15.4.2",
     "react-apollo": "^1.0.0-rc.2",
     "styletron-client": "^2.5.1",
