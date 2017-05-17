@@ -4,7 +4,7 @@
 The only difference between the two examples is the CSS-in-JS solution. This example features my preferred CSS-in-JS solution, [Styletron](http://styletron.js.org), whereas the other example features [styled-jsx](https://github.com/zeit/styled-jsx) (for those who prefer a more traditional CSS syntax).
 
 ## Demo
-https://next-apollo-example.now.sh
+https://next-with-apollo.now.sh
 
 ## How to use
 Install it and run
