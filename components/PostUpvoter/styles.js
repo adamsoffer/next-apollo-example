@@ -1,6 +1,6 @@
-import { styled } from 'styletron-react'
+import glamorous from 'glamorous'
 
-export const Button = styled('button', (props) => ({
+export const Button = glamorous.button({
   backgroundColor: 'transparent',
   border: '1px solid #e4e4e4',
   color: '#000',
@@ -17,4 +17,4 @@ export const Button = styled('button', (props) => ({
     marginRight: '5px',
     width: 0
   }
-}))
+})
