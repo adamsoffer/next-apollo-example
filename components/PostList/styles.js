@@ -1,38 +1,38 @@
-import { styled } from 'styletron-react'
+import glamorous from 'glamorous'
 
-export const Container = styled('section', (props) => ({
+export const Container = glamorous.section({
   paddingBottom: '20px'
-}))
+})
 
-export const List = styled('ul', (props) => ({
+export const List = glamorous.ul({
   margin: 0,
   padding: 0
-}))
+})
 
-export const ListItem = styled('li', (props) => ({
+export const ListItem = glamorous.li({
   display: 'block',
   marginBottom: '10px'
-}))
+})
 
-export const ListItemContainer = styled('div', (props) => ({
+export const ListItemContainer = glamorous.div({
   alignItems: 'center',
   display: 'flex'
-}))
+})
 
-export const Num = styled('span', (props) => ({
+export const Num = glamorous.span({
   fontSize: '14px',
   marginRight: '5px'
-}))
+})
 
-export const A = styled('a', (props) => ({
+export const A = glamorous.a({
   fontSize: '14px',
   marginRight: '10px',
   textDecoration: 'none',
   paddingBottom: 0,
   border: 0
-}))
+})
 
-export const Button = styled('button', (props) => ({
+export const Button = glamorous.button({
   ':before': {
     alignSelf: 'center',
     borderColor: '#ffffff transparent transparent transparent',
@@ -43,4 +43,4 @@ export const Button = styled('button', (props) => ({
     marginRight: '5px',
     width: 0
   }
-}))
+})

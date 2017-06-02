@@ -1,11 +1,12 @@
-import { styled } from 'styletron-react'
+import glamorous from 'glamorous'
 
-export const Container = styled('header', (props) => ({
+export const Container = glamorous.header({
   marginBottom: '25px'
-}))
+})
 
-export const LinkText = styled('span', (props) => ({
+export const LinkText = glamorous.span({
   fontSize: '14px',
-  marginRight: '15px',
+  marginRight: '15px'
+}, (props) => ({
   textDecoration: props.isActive ? 'underline' : 'none'
 }))
