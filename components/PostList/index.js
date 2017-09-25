@@ -1,16 +1,27 @@
 import { gql, graphql } from 'react-apollo'
 import PostUpvoter from '../PostUpvoter'
-import { Container, List, ListItem, ListItemContainer, Num, A, Button } from './styles'
+import {
+  Container,
+  List,
+  ListItem,
+  ListItemContainer,
+  Num,
+  A,
+  Button
+} from './styles'
 
 const POSTS_PER_PAGE = 10
 
-function PostList ({ data: { allPosts, loading, _allPostsMeta }, loadMorePosts }) {
+function PostList({
+  data: { allPosts, loading, _allPostsMeta },
+  loadMorePosts
+}) {
   if (allPosts && allPosts.length) {
     const areMorePosts = allPosts.length < _allPostsMeta.count
     return (
       <Container>
         <List>
-          {allPosts.map((post, index) =>
+          {allPosts.map((post, index) => (
             <ListItem key={post.id}>
               <ListItemContainer>
                 <Num>{index + 1}. </Num>
@@ -18,9 +29,16 @@ function PostList ({ data: { allPosts, loading, _allPostsMeta }, loadMorePosts }
                 <PostUpvoter id={post.id} votes={post.votes} />
               </ListItemContainer>
             </ListItem>
-          )}
+          ))}
         </List>
-        {areMorePosts ? <Button onClick={() => loadMorePosts()}> {loading ? 'Loading...' : 'Show More'} </Button> : ''}
+        {areMorePosts ? (
+          <Button onClick={() => loadMorePosts()}>
+            {' '}
+            {loading ? 'Loading...' : 'Show More'}{' '}
+          </Button>
+        ) : (
+          ''
+        )}
       </Container>
     )
   }
@@ -35,7 +53,7 @@ const allPosts = gql`
       votes
       url
       createdAt
-    },
+    }
     _allPostsMeta {
       count
     }

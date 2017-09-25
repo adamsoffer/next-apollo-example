@@ -1,8 +1,8 @@
 import { gql, graphql } from 'react-apollo'
 import { Form, H1, Input } from './styles'
 
-function Submit ({ createPost }) {
-  function handleSubmit (e) {
+function Submit({ createPost }) {
+  function handleSubmit(e) {
     e.preventDefault()
 
     let title = e.target.elements.title.value
@@ -28,9 +28,9 @@ function Submit ({ createPost }) {
   return (
     <Form onSubmit={handleSubmit}>
       <H1>Submit</H1>
-      <Input placeholder='title' name='title' />
-      <Input placeholder='url' name='url' />
-      <button type='submit'>Submit</button>
+      <Input placeholder="title" name="title" />
+      <Input placeholder="url" name="url" />
+      <button type="submit">Submit</button>
     </Form>
   )
 }
@@ -49,17 +49,18 @@ const createPost = gql`
 
 export default graphql(createPost, {
   props: ({ mutate }) => ({
-    createPost: (title, url) => mutate({
-      variables: { title, url },
-      updateQueries: {
-        allPosts: (previousResult, { mutationResult }) => {
-          const newPost = mutationResult.data.createPost
-          return Object.assign({}, previousResult, {
-            // Append the new post
-            allPosts: [newPost, ...previousResult.allPosts]
-          })
+    createPost: (title, url) =>
+      mutate({
+        variables: { title, url },
+        updateQueries: {
+          allPosts: (previousResult, { mutationResult }) => {
+            const newPost = mutationResult.data.createPost
+            return Object.assign({}, previousResult, {
+              // Append the new post
+              allPosts: [newPost, ...previousResult.allPosts]
+            })
+          }
         }
-      }
-    })
+      })
   })
 })(Submit)

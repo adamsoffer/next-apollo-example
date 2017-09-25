@@ -3,19 +3,21 @@ import { Container, LinkText } from './styles'
 
 export default ({ pathname }) => (
   <Container>
-    <Link prefetch href='/'>
+    <Link prefetch href="/">
       <a>
         <LinkText isActive={pathname === '/' && 'is-active'}>Home</LinkText>
       </a>
     </Link>
 
-    <Link prefetch href='/about'>
+    <Link prefetch href="/about">
       <a>
-        <LinkText isActive={pathname === '/about' && 'is-active'}>About</LinkText>
+        <LinkText isActive={pathname === '/about' && 'is-active'}>
+          About
+        </LinkText>
       </a>
     </Link>
 
-    <Link href='https://github.com/ads1018/next-apollo-example'>
+    <Link href="https://github.com/ads1018/next-apollo-example">
       <a>
         <LinkText>Github</LinkText>
       </a>

@@ -6,15 +6,20 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,json}": [
+      "prettier --write --no-semi --single-quote --jsx-bracket-same-line",
+      "git add"
+    ]
   },
   "author": "Adam Soffer",
   "license": "ISC",
   "standard": {
     "parser": "babel-eslint",
-    "ignore": [
-      "**/node_modules/**"
-    ]
+    "ignore": ["**/node_modules/**"]
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
