@@ -30,7 +30,6 @@ On initial page load, while on the server and inside `getInitialProps`, we invok
 This example relies on [graph.cool](http://graph.cool) for its GraphQL backend and [Glamorous](https://github.com/paypal/glamorous) for it's CSS-in-JS solution.
 
 ## Other CSS-in-JS solutions
-I've experimented with a couple over CSS-in-JS solutions. If you're interested in using Styled Components or Styletron with the example checkout the following  branches.
+If you're interested in using Styled Components with the example checkout the `styled-components`  branch.
 
 * [styled-components](https://github.com/ads1018/next-apollo-example/tree/styled-components)
-* [styletron](https://github.com/ads1018/next-apollo-example/tree/styletron)
