@@ -1,4 +1,5 @@
-import { gql, graphql } from 'react-apollo'
+import { graphql } from 'react-apollo'
+import gql from 'graphql-tag'
 import { Form, H1, Input } from './styles'
 
 function Submit({ createPost }) {

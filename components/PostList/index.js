@@ -1,5 +1,7 @@
-import { gql, graphql } from 'react-apollo'
+import { graphql } from 'react-apollo'
+import gql from 'graphql-tag'
 import PostUpvoter from '../PostUpvoter'
+import ErrorMessage from '../ErrorMessage'
 import {
   Container,
   List,
@@ -13,9 +15,10 @@ import {
 const POSTS_PER_PAGE = 10
 
 function PostList({
-  data: { allPosts, loading, _allPostsMeta },
+  data: { loading, error, allPosts, _allPostsMeta },
   loadMorePosts
 }) {
+  if (error) return <ErrorMessage message="Error loading posts." />
   if (allPosts && allPosts.length) {
     const areMorePosts = allPosts.length < _allPostsMeta.count
     return (
@@ -33,8 +36,7 @@ function PostList({
         </List>
         {areMorePosts ? (
           <Button onClick={() => loadMorePosts()}>
-            {' '}
-            {loading ? 'Loading...' : 'Show More'}{' '}
+            {loading ? 'Loading...' : 'Show More'}
           </Button>
         ) : (
           ''

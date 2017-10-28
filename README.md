@@ -29,9 +29,6 @@ On initial page load, while on the server and inside `getInitialProps`, we invok
 
 This example relies on [graph.cool](http://graph.cool) for its GraphQL backend and [Glamorous](https://github.com/paypal/glamorous) for it's CSS-in-JS solution.
 
-## Integrating Apollo with Redux
-By default, Apollo Client creates its own internal Redux store to manage queries and their results. If you are already using Redux for the rest of your application, you can have the client [integrate with your existing store](http://dev.apollodata.com/react/redux.html) instead. To see how this is done checkout the [redux branch.](https://github.com/ads1018/next-apollo-example/tree/redux)
-
 ## Other CSS-in-JS solutions
 I've experimented with a couple over CSS-in-JS solutions. If you're interested in using Styled Components or Styletron with the example checkout the following  branches.
 
