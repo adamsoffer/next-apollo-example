@@ -1,7 +1,7 @@
 # Next & Apollo Example [![Build Status](https://travis-ci.org/ads1018/next-apollo-example.svg?branch=master)](https://travis-ci.org/ads1018/next-apollo-example)
 
 *Note: this example has been merged into the  [Next.js](https://github.com/zeit/next.js/) `examples/` directory as an [official showcase](https://github.com/zeit/next.js/tree/master/examples/with-apollo).
-The only difference between the two examples is the CSS-in-JS solution. This example features my preferred CSS-in-JS solution, [Glamorous](https://github.com/paypal/glamorous), whereas the other example features [styled-jsx](https://github.com/zeit/styled-jsx) (for those who prefer a more traditional CSS syntax).This example also utilizes the [next-apollo](https://www.npmjs.com/package/next-apollo) which is simply an abstraction of the `withData` higher order component.
+The only difference between the two examples is the CSS-in-JS solution. This example features my preferred CSS-in-JS solution, [Glamorous](https://github.com/paypal/glamorous), whereas the other example features [styled-jsx](https://github.com/zeit/styled-jsx) (for those who prefer a more traditional CSS syntax).This example also utilizes the [next-apollo](https://www.npmjs.com/package/next-apollo) package which is simply an abstraction of the `withData` higher order component.
 
 ## Demo
 https://next-with-apollo.now.sh
