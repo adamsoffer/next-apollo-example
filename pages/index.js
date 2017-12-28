@@ -4,9 +4,9 @@ import Submit from '../components/Submit'
 import PostList from '../components/PostList'
 import withData from '../lib/apollo'
 
-export default withData(({ url }) => (
+export default withData(props => (
   <Main>
-    <Header pathname={url} />
+    <Header />
     <Submit />
     <PostList />
   </Main>
