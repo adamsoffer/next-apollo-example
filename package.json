@@ -31,6 +31,7 @@
     "graphql-tag": "^2.6.1",
     "isomorphic-fetch": "^2.2.1",
     "next": "^4.2.1",
+    "next-apollo": "^1.0.9",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-apollo": "^2.0.4",
