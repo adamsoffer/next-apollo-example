@@ -1,9 +1,9 @@
 import Main from '../lib/layout'
 import Header from '../components/Header'
 
-export default props => (
+export default ({ url }) => (
   <Main>
-    <Header pathname={props.url.pathname} />
+    <Header pathname={url.pathname} />
     <article>
       <h1>The Idea Behind This Example</h1>
       <p>
