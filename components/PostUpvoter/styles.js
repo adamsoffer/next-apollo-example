@@ -1,6 +1,6 @@
-import glamorous from 'glamorous'
+import styled from 'react-emotion'
 
-export const Button = glamorous.button({
+export const Button = styled('button')({
   backgroundColor: 'transparent',
   border: '1px solid #e4e4e4',
   color: '#000',

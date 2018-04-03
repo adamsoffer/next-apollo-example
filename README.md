@@ -1,7 +1,7 @@
 # Next & Apollo Example [![Build Status](https://travis-ci.org/ads1018/next-apollo-example.svg?branch=master)](https://travis-ci.org/ads1018/next-apollo-example)
 
 *Note: this example has been merged into the  [Next.js](https://github.com/zeit/next.js/) `examples/` directory as an [official showcase](https://github.com/zeit/next.js/tree/master/examples/with-apollo).
-There's only a couple minor difference between the two examples. This one features my preferred CSS-in-JS solution, [Glamorous](https://github.com/paypal/glamorous), whereas the other example features [styled-jsx](https://github.com/zeit/styled-jsx) (for those who prefer a more traditional CSS syntax). It also utilizes the [next-apollo](https://www.npmjs.com/package/next-apollo) package which is simply an abstraction of the `withData` higher order component.
+There's only a couple minor difference between the two examples. This one features my preferred CSS-in-JS solution, [Emotion](https://emotion.sh/), whereas the other example features [styled-jsx](https://github.com/zeit/styled-jsx) (for those who prefer a more traditional CSS syntax). It also utilizes the [next-apollo](https://www.npmjs.com/package/next-apollo) package which is simply an abstraction of the `withData` higher order component.
 
 ## Demo
 https://next-with-apollo.now.sh
@@ -27,9 +27,4 @@ In this simple example, we integrate Apollo seamlessly with Next by wrapping our
 
 On initial page load, while on the server and inside `getInitialProps`, we invoke the Apollo method,  [`getDataFromTree`](http://dev.apollodata.com/react/server-side-rendering.html#getDataFromTree). This method returns a promise; at the point in which the promise resolves, our Apollo Client store is completely initialized.
 
-This example relies on [graph.cool](http://graph.cool) for its GraphQL backend and [Glamorous](https://github.com/paypal/glamorous) for it's CSS-in-JS solution.
-
-## Other CSS-in-JS solutions
-If you're interested in using Styled Components with the example checkout the `styled-components`  branch.
-
-* [styled-components](https://github.com/ads1018/next-apollo-example/tree/styled-components)
+This example relies on [graph.cool](http://graph.cool) for its GraphQL backend and [Emotion](https://emotion.sh/) for it's CSS-in-JS solution.

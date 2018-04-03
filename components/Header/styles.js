@@ -1,15 +1,11 @@
-import glamorous from 'glamorous'
+import styled from 'react-emotion'
 
-export const Container = glamorous.header({
+export const Container = styled('header')({
   marginBottom: '25px'
 })
 
-export const LinkText = glamorous.span(
-  {
-    fontSize: '14px',
-    marginRight: '15px'
-  },
-  props => ({
-    textDecoration: props.isActive ? 'underline' : 'none'
-  })
-)
+export const LinkText = styled.span(props => ({
+  fontSize: '14px',
+  marginRight: '15px',
+  textDecoration: props.isActive ? 'underline' : 'none'
+}))

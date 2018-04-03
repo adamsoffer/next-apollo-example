@@ -1,16 +1,16 @@
-import glamorous from 'glamorous'
+import styled from 'react-emotion'
 
-export const Form = glamorous.form({
+export const Form = styled('form')({
   borderBottom: '1px solid #ececec',
   paddingBottom: '20px',
   marginBottom: '20px'
 })
 
-export const H1 = glamorous.h1({
+export const H1 = styled('h1')({
   fontSize: '20px'
 })
 
-export const Input = glamorous.input({
+export const Input = styled('input')({
   display: 'block',
   marginBottom: '10px'
 })

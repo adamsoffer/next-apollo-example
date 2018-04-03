@@ -1,30 +1,30 @@
-import glamorous from 'glamorous'
+import styled from 'react-emotion'
 
-export const Container = glamorous.section({
+export const Container = styled('section')({
   paddingBottom: '20px'
 })
 
-export const List = glamorous.ul({
+export const List = styled('ul')({
   margin: 0,
   padding: 0
 })
 
-export const ListItem = glamorous.li({
+export const ListItem = styled('li')({
   display: 'block',
   marginBottom: '10px'
 })
 
-export const ListItemContainer = glamorous.div({
+export const ListItemContainer = styled('div')({
   alignItems: 'center',
   display: 'flex'
 })
 
-export const Num = glamorous.span({
+export const Num = styled('span')({
   fontSize: '14px',
   marginRight: '5px'
 })
 
-export const A = glamorous.a({
+export const A = styled('a')({
   fontSize: '14px',
   marginRight: '10px',
   textDecoration: 'none',
@@ -32,7 +32,7 @@ export const A = glamorous.a({
   border: 0
 })
 
-export const Button = glamorous.button({
+export const Button = styled('button')({
   ':before': {
     alignSelf: 'center',
     borderColor: '#ffffff transparent transparent transparent',
