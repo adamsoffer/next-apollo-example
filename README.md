@@ -1,7 +1,11 @@
 # Next & Apollo Example [![Build Status](https://travis-ci.org/adamsoffer/next-apollo-example.svg?branch=master)](https://travis-ci.org/adamsoffer/next-apollo-example)
 
 *Note: this example has been merged into the  [Next.js](https://github.com/zeit/next.js/) `examples/` directory as an [official showcase](https://github.com/zeit/next.js/tree/master/examples/with-apollo).
-There's only a couple minor difference between the two examples. This one features my preferred CSS-in-JS solution, [Emotion](https://emotion.sh/), whereas the other example features [styled-jsx](https://github.com/zeit/styled-jsx) (for those who prefer a more traditional CSS syntax). It also utilizes the [next-apollo](https://www.npmjs.com/package/next-apollo) package which is simply an abstraction of the `withData` higher order component.
+
+The two examples have diverged slightly since then and there a couple difference between the two:
+- This example utilizes the [next-apollo](https://www.npmjs.com/package/next-apollo) package which is ideal if you prefer to use Apollo explicitly on a _page-by-page_ basis, as it requires you to wrap every page where you use Apollo in a HOC. If you prefer to use Apollo implicitly on every page, I recommend using the other example.
+- This example features my preferred CSS-in-JS solution, [Emotion](https://emotion.sh/), whereas the other example features [styled-jsx](https://github.com/zeit/styled-jsx) (for those who prefer a more traditional CSS syntax).
+
 
 ## Demo
 https://next-with-apollo.now.sh
