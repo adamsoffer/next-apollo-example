@@ -1,6 +1,6 @@
 # Next & Apollo Example [![Build Status](https://travis-ci.org/adamsoffer/next-apollo-example.svg?branch=master)](https://travis-ci.org/adamsoffer/next-apollo-example)
 
-This example utilizes the [next-apollo](https://www.npmjs.com/package/next-apollo) package which is ideal if you prefer to use Apollo explicitly on a _page-by-page_ basis, as it requires you to wrap every page where you use Apollo in a HOC. If you prefer to use Apollo implicitly on every page, I recommend using [this example](https://github.com/zeit/next.js/tree/master/examples/with-apollo).
+This example utilizes the [next-apollo](https://www.npmjs.com/package/next-apollo) package which is ideal if you want to tuck away all the ceremony involved when integrating Apollo. It's also ideal if you prefer to use Apollo explicitly on a _page-by-page_ basis, as it requires you to wrap each page where you use Apollo in a HOC. If you prefer to use Apollo implicitly on every page, I recommend using [this example](https://github.com/zeit/next.js/tree/master/examples/with-apollo).
 
 This example also features my preferred CSS-in-JS solution, [Emotion](https://emotion.sh/).
 
