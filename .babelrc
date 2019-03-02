@@ -2,10 +2,10 @@
   "presets": ["next/babel"],
   "env": {
     "production": {
-      "plugins": [["emotion", { "hoist": true }]]
+      "plugins": ["emotion"]
     },
     "development": {
-      "plugins": [["emotion", { "sourceMap": true, "autoLabel": true }]]
+      "plugins": [["emotion", { "sourceMap": true }]]
     }
   }
 }
