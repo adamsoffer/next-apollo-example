@@ -12,25 +12,27 @@
   "author": "Adam Soffer",
   "license": "ISC",
   "devDependencies": {
-    "babel-plugin-emotion": "^10.0.7",
+    "babel-plugin-emotion": "^10.0.9",
     "husky": "^1.3.1",
-    "lint-staged": "^8.1.4",
-    "prettier": "^1.16.4"
+    "lint-staged": "^8.1.7",
+    "prettier": "^1.17.1"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.7",
-    "@emotion/styled": "^10.0.7",
+    "@apollo/react-common": "0.1.0-beta.5",
+    "@apollo/react-hooks": "0.1.0-beta.7",
+    "@emotion/core": "^10.0.10",
+    "@emotion/styled": "^10.0.11",
     "apollo-client-preset": "^1.0.8",
-    "graphql": "^14.1.1",
-    "graphql-anywhere": "^4.1.7",
+    "apollo-link-http": "^1.5.14",
+    "graphql": "^14.3.1",
+    "graphql-anywhere": "^4.2.2",
     "graphql-tag": "^2.8.0",
     "isomorphic-fetch": "^2.2.1",
-    "next": "^8.0.3",
-    "next-apollo": "^2.0.9",
+    "next": "^8.1.0",
+    "next-apollo": "^3.0.0-beta.0",
     "prop-types": "^15.6.1",
-    "react": "^16.8.3",
-    "react-apollo": "^2.0.4",
-    "react-dom": "^16.8.3"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "husky": {
     "hooks": {
