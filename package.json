@@ -1,7 +1,7 @@
 {
   "name": "next-apollo-example",
   "url": "git@github.com:ads1018/next-apollo-example.git",
-  "version": "0.0.0",
+  "version": "3.0.0-beta.1",
   "description": "Next + Apollo integration",
   "scripts": {
     "dev": "next",
