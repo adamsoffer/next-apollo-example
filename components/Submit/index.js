@@ -56,14 +56,15 @@ export default function Submit() {
       return false;
     }
 
-    // prepend http if missing from url
-    var pattern = /^((http|https):\/\/)/;
-    createPost(title, !pattern.test(url) ? `https://${url}` : url);
+    createPost();
 
     // reset form
     e.target.elements.title.value = "";
     e.target.elements.url.value = "";
   }
+
+  // prepend http if missing from url
+  const pattern = /^((http|https):\/\/)/;
 
   return (
     <Form onSubmit={handleSubmit}>
@@ -76,11 +77,13 @@ export default function Submit() {
       <Input
         placeholder="url"
         name="url"
-        onChange={e => {
-          var pattern = /^((http|https):\/\/)/;
-          console.log(!pattern.test(url));
-          return setUrl(e.target.value);
-        }}
+        onChange={e =>
+          setUrl(
+            !pattern.test(e.target.value)
+              ? `https://${e.target.value}`
+              : e.target.value
+          )
+        }
       />
       <button type="submit">Submit</button>
     </Form>
