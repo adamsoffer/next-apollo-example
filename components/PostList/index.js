@@ -1,6 +1,6 @@
 import { useQuery } from "@apollo/react-hooks";
-import gql from "graphql-tag";
-// import PostUpvoter from '../PostUpvoter'
+import { gql } from "apollo-boost";
+import PostUpvoter from "../PostUpvoter";
 
 import ErrorMessage from "../ErrorMessage";
 import {
@@ -35,7 +35,7 @@ function PostList() {
     variables: { skip: 0, first: POSTS_PER_PAGE },
     notifyOnNetworkStatusChange: true
   });
-  if (data && data.allPosts && data.allPosts.length) {
+  if (data && data.allPosts) {
     const areMorePosts = data.allPosts.length < data._allPostsMeta.count;
     return (
       <Container>
@@ -45,7 +45,7 @@ function PostList() {
               <ListItemContainer>
                 <Num>{index + 1}. </Num>
                 <A href={post.url}>{post.title}</A>
-                {/* <PostUpvoter id={post.id} votes={post.votes} /> */}
+                <PostUpvoter id={post.id} votes={post.votes} />
               </ListItemContainer>
             </ListItem>
           ))}

@@ -1,34 +1,29 @@
-import { graphql } from 'react-apollo'
-import gql from 'graphql-tag'
-import { Button } from './styles'
+import { useState } from "react";
+import { useMutation } from "@apollo/react-hooks";
+import { gql } from "apollo-boost";
+import { Button } from "./styles";
 
-function PostUpvoter({ upvote, votes, id }) {
-  return <Button onClick={() => upvote(id, votes + 1)}>{votes}</Button>
-}
-
-const upvotePost = gql`
+const UPDATE_POST = gql`
   mutation updatePost($id: ID!, $votes: Int) {
     updatePost(id: $id, votes: $votes) {
-      id
       __typename
+      id
       votes
     }
   }
-`
+`;
 
-export default graphql(upvotePost, {
-  props: ({ ownProps, mutate }) => ({
-    upvote: (id, votes) =>
-      mutate({
-        variables: { id, votes },
-        optimisticResponse: {
-          __typename: 'Mutation',
-          updatePost: {
-            __typename: 'Post',
-            id: ownProps.id,
-            votes: ownProps.votes + 1
-          }
-        }
-      })
-  })
-})(PostUpvoter)
+export default function PostUpvoter({ id, votes }) {
+  const [updatePost, { error, data }] = useMutation(UPDATE_POST, {
+    variables: { id, votes: votes + 1 },
+    optimisticResponse: {
+      __typename: "Mutation",
+      updatePost: {
+        __typename: "Post",
+        id,
+        votes: votes + 1
+      }
+    }
+  });
+  return <Button onClick={() => updatePost()}>{votes}</Button>;
+}

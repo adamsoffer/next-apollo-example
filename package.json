@@ -1,7 +1,7 @@
 {
   "name": "next-apollo-example",
   "url": "git@github.com:ads1018/next-apollo-example.git",
-  "version": "3.0.0-beta.1",
+  "version": "0.0.0",
   "description": "Next + Apollo integration",
   "scripts": {
     "dev": "next",
@@ -12,24 +12,21 @@
   "author": "Adam Soffer",
   "license": "ISC",
   "devDependencies": {
-    "babel-plugin-emotion": "^10.0.9",
+    "babel-plugin-emotion": "^10.0.13",
     "husky": "^1.3.1",
-    "lint-staged": "^8.1.7",
-    "prettier": "^1.17.1"
+    "lint-staged": "^8.2.0",
+    "prettier": "^1.18.2"
   },
   "dependencies": {
     "@apollo/react-common": "0.1.0-beta.5",
     "@apollo/react-hooks": "0.1.0-beta.7",
     "@emotion/core": "^10.0.10",
-    "@emotion/styled": "^10.0.11",
-    "apollo-client-preset": "^1.0.8",
-    "apollo-link-http": "^1.5.14",
+    "@emotion/styled": "^10.0.12",
+    "apollo-boost": "^0.4.2",
     "graphql": "^14.3.1",
-    "graphql-anywhere": "^4.2.2",
-    "graphql-tag": "^2.8.0",
     "isomorphic-fetch": "^2.2.1",
-    "next": "^8.1.0",
-    "next-apollo": "^3.0.0-beta.0",
+    "next": "^8.1.1-canary.50",
+    "next-apollo": "^3.0.0-beta.5",
     "prop-types": "^15.6.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
