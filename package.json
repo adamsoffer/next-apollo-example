@@ -18,17 +18,19 @@
     "prettier": "^1.18.2"
   },
   "dependencies": {
-    "@apollo/react-hooks": "0.1.0-beta.11",
+    "@apollo/react-common": "^3.0.1",
+    "@apollo/react-hooks": "^3.0.1",
+    "@apollo/react-ssr": "^3.0.1",
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.12",
-    "apollo-boost": "^0.4.2",
+    "apollo-boost": "^0.4.4",
+    "apollo-client": "^2.6.4",
     "graphql": "^14.3.1",
     "isomorphic-fetch": "^2.2.1",
-    "next": "^9.0.2",
-    "next-apollo": "^3.0.3",
+    "next": "^9.0.4",
+    "next-apollo": "^3.1.1",
     "prop-types": "^15.6.1",
     "react": "^16.8.6",
-    "react-apollo": "^2.5.8",
     "react-dom": "^16.8.6"
   },
   "husky": {
