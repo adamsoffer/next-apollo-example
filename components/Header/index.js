@@ -4,11 +4,6 @@ import { Container, LinkText } from "./styles";
 
 const Header = () => {
   const router = useRouter();
-  // Have to check if router exists until this issue is resolved
-  // https://github.com/zeit/next.js/issues/6042
-  if (!router) {
-    return null;
-  }
   const { pathname } = router;
   return (
     <Container>
