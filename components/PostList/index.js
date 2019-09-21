@@ -39,9 +39,9 @@ function PostList() {
     const areMorePosts = data.allPosts.length < data._allPostsMeta.count;
     return (
       <Container>
-        <List>
+        <List data-testid="postListList">
           {data.allPosts.map((post, index) => (
-            <ListItem key={post.id}>
+            <ListItem key={post.id} data-testid="postListListItem">
               <ListItemContainer>
                 <Num>{index + 1}. </Num>
                 <A href={post.url}>{post.title}</A>
