@@ -3,7 +3,7 @@
 import React from "react";
 import { act, render } from "@testing-library/react";
 
-import { RouterContext } from "next-server/dist/lib/router-context";
+import { RouterContext } from "next/dist/next-server/lib/router-context";
 
 import About from "../about.js";
 

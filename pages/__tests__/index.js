@@ -3,7 +3,7 @@
 import React from "react";
 import { act, render, waitForElement } from "@testing-library/react";
 
-import { RouterContext } from "next-server/dist/lib/router-context";
+import { RouterContext } from "next/dist/next-server/lib/router-context";
 
 import Index from "../index.js";
 
