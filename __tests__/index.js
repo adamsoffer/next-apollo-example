@@ -5,7 +5,7 @@ import { act, render, waitForElement } from "@testing-library/react";
 
 import { RouterContext } from "next/dist/next-server/lib/router-context";
 
-import Index from "../index.js";
+import Index from "../pages/index";
 
 const routerValue = {
   pathname: "/",

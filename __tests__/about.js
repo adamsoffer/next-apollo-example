@@ -5,7 +5,7 @@ import { act, render } from "@testing-library/react";
 
 import { RouterContext } from "next/dist/next-server/lib/router-context";
 
-import About from "../about.js";
+import About from "../pages/about";
 
 it('says "we integrate Apollo seamlessly with Next"', async () => {
   const router = {
