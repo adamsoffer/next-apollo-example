@@ -3,3 +3,5 @@ node_modules
 *~
 .next
 npm-debug.log
+
+.now
