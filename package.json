@@ -1,6 +1,6 @@
 {
   "name": "next-apollo-example",
-  "url": "git@github.com:ads1018/next-apollo-example.git",
+  "url": "git@github.com:adamsoffer/next-apollo-example.git",
   "version": "0.0.0",
   "description": "Next + Apollo integration",
   "scripts": {
@@ -13,8 +13,8 @@
   "author": "Adam Soffer",
   "license": "ISC",
   "devDependencies": {
-    "@babel/preset-env": "^7.6.0",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
     "@testing-library/react": "^9.1.4",
     "babel-jest": "^24.9.0",
     "babel-plugin-emotion": "^10.0.13",
@@ -25,18 +25,18 @@
     "react-test-renderer": "^16.9.0"
   },
   "dependencies": {
-    "@apollo/react-hooks": "^3.0.1",
-    "@apollo/react-ssr": "^3.0.1",
-    "@emotion/core": "^10.0.10",
-    "@emotion/styled": "^10.0.12",
-    "apollo-boost": "^0.4.4",
-    "graphql": "^14.3.1",
+    "@apollo/react-hooks": "^3.1.5",
+    "@apollo/react-ssr": "^3.1.5",
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "apollo-boost": "^0.4.7",
+    "graphql": "^15.0.0",
     "isomorphic-fetch": "^2.2.1",
-    "next": "^9.0.6",
-    "next-apollo": "^3.1.5",
+    "next": "^9.3.6",
+    "next-apollo-test": "^4.0.0",
     "prop-types": "^15.6.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "husky": {
     "hooks": {

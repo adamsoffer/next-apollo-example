@@ -2,9 +2,9 @@ import Main from "../lib/layout";
 import Header from "../components/Header";
 import Submit from "../components/Submit";
 import PostList from "../components/PostList";
-import withData from "../lib/apollo";
+import withApollo from "../lib/apollo";
 
-export default withData(props => {
+const Home = props => {
   return (
     <Main>
       <Header />
@@ -12,4 +12,6 @@ export default withData(props => {
       <PostList />
     </Main>
   );
-});
+};
+
+export default withApollo({ ssr: true })(Home);
