@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { useMutation } from "@apollo/react-hooks";
-import { gql } from "apollo-boost";
+import { gql, useMutation } from "@apollo/client";
 import { Form, H1, Input } from "./styles";
 
 const CREATE_POST = gql`

@@ -1,8 +1,6 @@
-import { useQuery } from "@apollo/react-hooks";
-import { gql } from "apollo-boost";
+import { gql, useQuery } from "@apollo/client";
 import PostUpvoter from "../PostUpvoter";
 
-import ErrorMessage from "../ErrorMessage";
 import {
   Container,
   List,
