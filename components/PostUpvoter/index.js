@@ -4,11 +4,11 @@ import { gql } from "apollo-boost";
 import { Button } from "./styles";
 
 const UPDATE_POST = gql`
-  mutation updatePost($id: ID!, $votes: Int) {
-    updatePost(id: $id, votes: $votes) {
-      __typename
+  mutation votePost($id: String!) {
+    votePost(id: $id) {
       id
       votes
+      __typename
     }
   }
 `;
@@ -18,7 +18,7 @@ export default function PostUpvoter({ id, votes }) {
     variables: { id, votes: votes + 1 },
     optimisticResponse: {
       __typename: "Mutation",
-      updatePost: {
+      votePost: {
         __typename: "Post",
         id,
         votes: votes + 1

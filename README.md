@@ -25,4 +25,4 @@ In this simple example, we integrate Apollo seamlessly with Next by wrapping our
 
 On initial page load, while on the server and inside `getInitialProps`, we invoke the Apollo method, [`getDataFromTree`](http://dev.apollodata.com/react/server-side-rendering.html#getDataFromTree). This method returns a promise; at the point in which the promise resolves, our Apollo Client store is completely initialized.
 
-This example relies on [graph.cool](http://graph.cool) for its GraphQL backend and [Emotion](https://emotion.sh/) for it's CSS-in-JS solution.
+This example relies on [Prisma + Nexus](https://github.com/prisma-labs/nextjs-graphql-api-examples) for its GraphQL backend.

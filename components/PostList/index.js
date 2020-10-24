@@ -17,7 +17,7 @@ const POSTS_PER_PAGE = 10;
 
 const GET_POSTS = gql`
   query allPosts($first: Int!, $skip: Int!) {
-    allPosts(orderBy: createdAt_DESC, first: $first, skip: $skip) {
+    allPosts(orderBy: { createdAt: desc }, first: $first, skip: $skip) {
       id
       title
       votes
