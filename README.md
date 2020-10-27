@@ -2,6 +2,8 @@
 
 This example utilizes the [next-apollo](https://www.npmjs.com/package/next-apollo) package which is ideal if you want to tuck away some of the ceremony involved when using Apollo in your Next.js app. It also features my preferred CSS-in-JS solution, [Emotion](https://emotion.sh/).
 
+[Demo](https://next-with-apollo.vercel.app/)
+
 ## How to use
 
 Install it and run
