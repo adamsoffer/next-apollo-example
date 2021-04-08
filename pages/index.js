@@ -4,6 +4,7 @@ import Submit from "../components/Submit";
 import PostList from "../components/PostList";
 import PageName from "../components/PageName";
 import withApollo from "../lib/apollo";
+import { getDataFromTree } from "@apollo/client/react/ssr";
 
 const Home = props => {
   return (
@@ -16,4 +17,4 @@ const Home = props => {
   );
 };
 
-export default withApollo({ ssr: true })(Home);
+export default withApollo(Home, { getDataFromTree });

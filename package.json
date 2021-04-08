@@ -31,6 +31,7 @@
     "graphql": "^15.3.0",
     "next": "^9.5.5",
     "next-apollo": "^5.0.4",
+    "next-with-apollo": "^5.1.1",
     "prop-types": "^15.6.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
