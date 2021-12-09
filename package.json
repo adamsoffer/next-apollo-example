@@ -29,7 +29,7 @@
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
     "graphql": "^15.3.0",
-    "next": "^9.5.5",
+    "next": "^11.1.3",
     "next-apollo": "^5.0.4",
     "prop-types": "^15.6.1",
     "react": "^17.0.1",
